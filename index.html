@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Manuela_</p>
+        <h1>Estudo linguagens de programação pelo Alura</h1>
+        <p>Sou estudante da escola Antônio Berreta. Estou no último ano do ensino médio. Estudo sobre pensamento computacional usando HTML, CSS e JavaScript. Veja os projetos
+            que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="\portfólio\img" class="card-img-top" alt="img1">
+                    <div class="card-body">
+                        <h5 class="card-title">Alura-flix</h5>
+                        <p class="card-text">O projeto Aluraflix é uma aplicação web inspirada na interface da Netflix, desenvolvida durante desafios da Alura e/ou Oracle Next Education. Aqui está o que você vai encontrar
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Alura-books
+                            Artificial</h5>
+                        <p class="card-text">O projeto Alura Books é um case de estudo desenvolvido durante o curso de front-end da Alura, com foco em responsividade e boas práticas de CSS. Aqui vai um panorama completo:</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Alura-plus
+                        </h5>
+                        <p class="card-text">Alura Plus é uma plataforma de aprendizado online voltada para a formação de profissionais na área de tecnologia. A proposta do site é proporcionar uma experiência imersiva e prática para aqueles que desejam aprimorar suas habilidades em áreas como desenvolvimento de software, design de interfaces, UX/UI, e muito mais.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Objetivo:
+Criar um repositório de vídeos do YouTube, permitindo que usuários visualizem conteúdo organizado por categorias. 
+Funcionalidades principais
+CRUD de categorias: adicionar, editar, listar e remover categorias de vídeos. 
+CRUD de vídeos: gerenciar vídeos – inserir links, editar metadados, apagar vídeos. 
+Listagem dinâmica: exibição de vídeos agrupados por categoria, similar à experiência de streaming de plataformas como a Netflix. 
+ Tecnologias utilizadas
+React como base da interface (em múltiplas versões do projeto). 
+Axios para requisições HTTP ao backend/fake API. repos.ecosyste.ms
+JSON Server ou API falsa (mockada via Vercel) para simular persistência de dados (CRUD). 
+Swiper (em alguns casos) para criar carrossel de vídeos.
+Styled Components, Material UI, Yup e Formik para estilização e validação de formulários. 
+ Arquitetura e fluxo geral
+Backend leve (API fake/JSON Server) estrutura dados de categorias e vídeos.
+Front end React consome essa API através de Axios.
+Usuário interage com formulários (via Formik/Yup ou Material UI), criando ou editando vídeos/categorias.
+Vídeos são agrupados por categoria e exibidos em layout tipo streaming com carrosséis.
+Arquivo db.json armazena os dados localmente. 
+Destaques do projeto
+Simula uma interface envolvente de vídeo com agrupamento por tema e navegação via carrossel.
+Inclusão de funções essenciais de CRUD, testando habilidades de integração front back com APIs REST.
+Uso de boas práticas em React: componentes reutilizáveis, hooks, estilos isolados com Styled Components.
+Variações com formatação e tecnologias diferentes (Material UI, validação formal com Yup, etc).
+
+</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://manuglobleckner.github.io/aluraflix/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/manuglobleckner/aluraflix">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alura-books</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Objetivo:
+Construir uma página de e commerce para divulgação de livros, adotando:
+Metodologia Mobile First com layouts para celular, tablet e desktop 
+Técnicas avançadas de CSS e BEM para organização dos seletores 
+Tecnologias usadas
+HTML5 e CSS3 (com media queries focando em diversas larguras de tela) 
+SwiperJS para implementar um carrossel de livros de forma fluida e responsiva 
+Organizado com BEM, facilitando a manutenção do CSS 
+ Funcionalidades principais
+Exibição de livros por categorias (tecnologia, programação, etc.)
+Carrossel interativo com navegação entre livros
+Navegação responsiva, incluindo menu hambúrguer no mobile
+Adaptação do layout conforme breakpoints definidos (418 px, 1024 px, 1366 px, 1728 px)  Curso e autoria
+Projetado como parte da Formação Front end da Alura, ministrado por instrutores como Guilherme Lima, Rafaella Ballerini, Monica Hillman, entre outros 
+Enfatiza conceitos de usabilidade, responsividade e uso sem JavaScript para elementos de interface (como o menu hambúrguer) 
+
+
+                    </p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://manuglobleckner.github.io/Alura-books/">Ver projeto ao
+                        vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Alura-plus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto Alura Plus é uma plataforma online de cursos e treinamentos voltada para o desenvolvimento de habilidades no universo da tecnologia. Pelo nome e pelo domínio, parece ser um projeto ou uma demonstração que utiliza recursos interativos e modernos para promover cursos de formação na área de tecnologia, como programação, design, entre outros.
+Como você me forneceu apenas o link para o site, sem detalhes específicos sobre o que você deseja saber, aqui vai uma descrição baseada no que normalmente seria esperado de um projeto com esse nome:
+Descrição Geral:
+Alura Plus é provavelmente uma versão aprimorada de um serviço de aprendizado como a Alura, que já é um conhecido portal de cursos. Esse "Plus" pode indicar uma oferta mais robusta, como:
+Cursos exclusivos ou premium.
+Acesso a conteúdo extra, como workshops, vídeos, artigos, e outros materiais educativos.
+Interatividade, com elementos como quizzes, fóruns, e talvez até tutoriais em tempo real.
+Gamificação, com badges e progressão para tornar o aprendizado mais envolvente.
+
+</p>
+                    <img src="img/projeto-3.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://manuglobleckner.github.io/Alura-plus/">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+             <a href="https://github.com/manuglobleckner">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Antônio Berreta. Produzido por Manuela Globleckner</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
